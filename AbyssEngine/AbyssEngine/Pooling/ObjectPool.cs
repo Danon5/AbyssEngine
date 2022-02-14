@@ -4,7 +4,7 @@
     {
         public T PooledInstantiate()
         {
-            
+            return default;
         }
     }
 }
