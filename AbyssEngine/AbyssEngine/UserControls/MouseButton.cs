@@ -1,4 +1,4 @@
-﻿namespace AbyssEngine
+﻿namespace AbyssEngine.UserControls
 {
     public enum MouseButton
     {

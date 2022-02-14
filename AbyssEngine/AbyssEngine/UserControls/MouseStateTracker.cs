@@ -2,7 +2,7 @@
 using AbyssEngine.CustomMath;
 using Microsoft.Xna.Framework.Input;
 
-namespace AbyssEngine
+namespace AbyssEngine.UserControls
 {
     public static class MouseStateTracker
     {

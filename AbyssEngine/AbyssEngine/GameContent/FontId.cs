@@ -1,7 +1,7 @@
 ﻿namespace AbyssEngine.GameContent
 {
-    public enum FontId
+    public sealed class FontId
     {
-        Default,
+        
     }
 }

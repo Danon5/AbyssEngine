@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using AbyssEngine.Backend.Rendering;
 using AbyssEngine.GameContent;
+using AbyssEngine.UserControls;
 using Microsoft.Xna.Framework;
 
 namespace AbyssEngine.Backend
@@ -15,7 +16,6 @@ namespace AbyssEngine.Backend
         public List<Behaviour> Behaviours => _behaviours;
         
         private List<Behaviour> _behaviours;
-        
         private ContentLoader _contentLoader;
         private EngineRenderer _engineRenderer;
         private InputPoller _inputPoller;

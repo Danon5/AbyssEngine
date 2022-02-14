@@ -17,6 +17,7 @@ namespace AbyssEngine
         public virtual void Tick() { }
         public virtual void LateTick() { }
         public virtual void DrawGizmos() { }
+        public virtual void DrawGUI() { }
 
         public void Destroy()
         {

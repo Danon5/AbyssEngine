@@ -1,8 +1,7 @@
 ﻿using System;
 using AbyssEngine.Backend;
-using AbyssEngine.GameContent;
 
-namespace AbyssEngine
+namespace AbyssEngine.ExampleGame
 {
     public static class Program
     {

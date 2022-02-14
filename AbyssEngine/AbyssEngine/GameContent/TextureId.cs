@@ -1,7 +1,7 @@
 ﻿namespace AbyssEngine.GameContent
 {
-    public enum TextureId
+    public sealed class TextureId
     {
-        Turret,
+        
     }
 }

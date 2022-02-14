@@ -24,7 +24,7 @@ namespace AbyssEngine.Backend.Rendering
 
         // TODO: GUI batching, rename DrawText to IndividualDrawText
         
-        public static void DrawText(string text, CVector2 position, CColor? color = null, FontId font = FontId.Default)
+        public static void DrawText(string text, CVector2 position, FontId font, CColor? color = null)
         {
             position += EngineRenderer.DisplayedGameOffset;
             color ??= CColor.White;

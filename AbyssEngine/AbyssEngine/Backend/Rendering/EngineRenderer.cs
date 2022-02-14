@@ -172,41 +172,19 @@ namespace AbyssEngine.Backend.Rendering
             foreach (Behaviour behaviour in _engine.Behaviours)
             {
                 if (behaviour.IsDestroyed)
-                    throw new Exception("GizmosUpdate being called on Behaviour, but it has already been destroyed.");
+                    throw new Exception("DrawGizmos being called on Behaviour, but it has already been destroyed.");
                 behaviour.DrawGizmos();
             }
         }
-        
-        private const float FPS_DURATION = .5f;
-        private float _fps;
-        private float _sumFps;
-        private int _fpsCount;
-        private float _lastFpsTime;
+
         private void DrawGUI()
         {
-            if (Time.TotalTime - _lastFpsTime > FPS_DURATION)
+            foreach (Behaviour behaviour in _engine.Behaviours)
             {
-                _fps = _sumFps / _fpsCount;
-                _sumFps = 0f;
-                _fpsCount = 0;
-                _lastFpsTime += FPS_DURATION;
+                if (behaviour.IsDestroyed)
+                    throw new Exception("DrawGUI being called on Behaviour, but it has already been destroyed.");
+                behaviour.DrawGUI();
             }
-            else
-            {
-                _sumFps += 1f / Time.DeltaTime;
-                _fpsCount++;
-            }
-            
-            GUIRenderer.DrawText($"Camera Position: {_camera.Position}", 
-                new CVector2(5f, 5f), Color.Yellow);
-            GUIRenderer.DrawText($"Mouse Screen Position: {MouseStateTracker.ScreenPosition}", 
-                new CVector2(5f, 30f), Color.Yellow);
-            GUIRenderer.DrawText($"Mouse World Position: {MouseStateTracker.WorldPosition}", 
-                new CVector2(5f, 55f), Color.Yellow);
-            GUIRenderer.DrawText($"Orthographic Size: {CMath.RoundToDecimal(_camera.OrthographicSize, 1)}", 
-                new CVector2(5f, 80f), Color.Yellow);
-            GUIRenderer.DrawText($"FPS: {CMath.Clamp(CMath.RoundToInt(_fps), 0, int.MaxValue)}", 
-                new CVector2(5f, 105f), Color.Yellow);
         }
     }
 }

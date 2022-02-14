@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "wJ/iwELvM52H/x6RwtOmAaX/PoMwNR89OS9scVU8Web623wVgoFt8NkgMGp0Z3HZtQ7YQXceiFMZVNY9YIYGcA==",
+  "success": true,
+  "projectFilePath": "C:\\Dev\\Monogame\\AbyssEngine\\AbyssEngine\\AbyssEngine.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\danon\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"
+  ],
+  "logs": []
+}

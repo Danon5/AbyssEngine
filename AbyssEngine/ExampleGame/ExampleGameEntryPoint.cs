@@ -1,6 +1,6 @@
-﻿namespace AbyssEngine
+﻿namespace AbyssEngine.ExampleGame
 {
-    public class ExampleGameEntryPoint : IGameEntryPoint
+    internal class ExampleGameEntryPoint : IGameEntryPoint
     {
         public void StartGame()
         {
